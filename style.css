@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+  background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/QIAQ9Rd/blue-sky-and-blur-sea-background-video-animation_bjd08-tb__F0010.png)
+    fixed center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+  margin-bottom: 15px;
+}
+h2,
+.text,
+p {
+  font-family: sans-serif;
+  color: white;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=12350), auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input[type="number"] {
+  width: 6em;
+}
+
+input[type="color"] {
+  width: 120px;
+  background-color: #444444;
+  height: 2em;
+}
+
+input[type="button"],
+#submit {
+  background-color: #222222;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0.3em;
+  margin-bottom: 0.5em;
+  width: 140px;
+  height: 2em;
+}
+
+input[type="button"] {
+  cursor: not-allowed;
+}
+
+.container {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 1200px;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 10px;
+  display: block;
+}
+
+#done,
+#clear {
+  width: 290px;
+}
+
+#done {
+  height: 4em;
+}

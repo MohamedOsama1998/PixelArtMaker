@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pixel Art Maker!</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Monoton"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Pixel Art Maker</h1>
+    <div class="container">
+      <form id="sizePicker">
+        <h2>Choose Grid Size</h2>
+        <span class="text">Grid Height:</span>
+        <input
+          type="number"
+          id="input_height"
+          name="height"
+          min="1"
+          max="50"
+          value="1"
+        />
+        <span class="text">Grid Width:</span>
+        <input
+          type="number"
+          id="input_width"
+          name="width"
+          min="1"
+          max="50"
+          value="1"
+        />
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+    <div class="container">
+      <h2>Pick A Color</h2>
+      <input type="color" id="colorPicker" />
+    </div>
+    <div class="container" id="options">
+      <h2>Options</h2>
+      <input type="button" id="addCol" value="Add column" disabled />
+      <input type="button" id="addRaw" value="Add Raw" disabled />
+      <br />
+      <input type="button" id="remCol" value="Remove column" disabled />
+      <input type="button" id="remRaw" value="Remove raw" disabled />
+      <br />
+      <input type="button" id="clear" value="Clear canvas" disabled />
+      <br />
+      <input type="button" id="done" value="Done!" disabled />
+    </div>
+    <div class="container" id="canvas">
+      <h2>Design Canvas</h2>
+      <table id="pixel_canvas" tabindex="1"></table>
+    </div>
+    <div class="container">
+      <h2>How to use?</h2>
+      <p>- Choose width/height then press "Submit" and enjoy!</p>
+      <p>- You can not choose values greater than 50.</p>
+      <h2>Features</h2>
+      <p>- To draw : hold Left-Click while moving your mouse over the cells.</p>
+      <p>
+        - To erase : hold Right-Click while moving your mouse over the cells.
+      </p>
+      <p>
+        - To pick this color (that you are hovering on) : simply left-click the
+        cell while holding SHIFT.
+      </p>
+      <p>- You can use options buttons to add/remove Raws/Columns.</p>
+      <p>- Clear Canvas button removes all colors from cells to start again.</p>
+      <p>
+        - Finished drawing ? Hit the "Done" button to see your drawing clearly !
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
